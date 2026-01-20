@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="KaamSetu - India's premier gig work platform connecting workers with opportunities through fair negotiation, secure payments, and location-based matching.">
+  <title>KaamSetu - Bridging Workers with Opportunities</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" style="stop-color:#6366f1" />
+              <stop offset="50%" style="stop-color:#8b5cf6" />
+              <stop offset="100%" style="stop-color:#ec4899" />
+            </linearGradient>
+          </defs>
+          <!-- Bridge arches -->
+          <path d="M5 25 Q10 15 15 25" stroke="url(#logoGradient)" stroke-width="3" fill="none"
+            stroke-linecap="round" />
+          <path d="M25 25 Q30 15 35 25" stroke="url(#logoGradient)" stroke-width="3" fill="none"
+            stroke-linecap="round" />
+          <!-- Handshake in center -->
+          <path d="M15 20 L18 17 L22 17 L25 20 M18 17 L20 15 M22 17 L20 15" stroke="url(#logoGradient)"
+            stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="logo-text">KaamSetu</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#demo" class="nav-link">Demo</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown">
+          <button class="profile-btn" id="profileBtn">
+            <img
+              src="C:/Users/BHUTAIYA PARTH/.gemini/antigravity/brain/689a0ba3-f8c0-411c-a4dd-9f3492042712/profile_avatar_1768301304274.png"
+              alt="Profile" class="profile-avatar">
+          </button>
+          <div class="profile-menu" id="profileMenu">
+            <div class="profile-header">
+              <div class="profile-name">Guest User</div>
+              <div class="profile-email">guest@kaamsetu.in</div>
+            </div>
+            <a href="#" class="profile-menu-item">
+              <span>👤</span> My Profile
+            </a>
+            <a href="#" class="profile-menu-item">
+              <span>💼</span> My Jobs
+            </a>
+            <a href="#" class="profile-menu-item">
+              <span>💰</span> Earnings
+            </a>
+            <a href="#" class="profile-menu-item">
+              <span>⚙️</span> Settings
+            </a>
+            <a href="#" class="profile-menu-item">
+              <span>🚪</span> Sign Out
+            </a>
+          </div>
+        </div>
+
+        <button class="btn-secondary">Sign In</button>
+        <button class="btn-primary">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">🚀</span>
+            <span>India's Gig Work Bridge</span>
+          </div>
+          <h1 class="hero-title">
+            Connect. Negotiate. <span class="gradient-text">Earn Fair</span>
+          </h1>
+          <p class="hero-description">
+            KaamSetu bridges workers with opportunities through transparent negotiation,
+            location-based matching, and secure payments. Your work, your terms.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-hero-primary">Find Work Now</button>
+            <button class="btn-hero-secondary">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+              </svg>
+              Watch Demo
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">50K+</div>
+              <div class="stat-label">Active Workers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1M+</div>
+              <div class="stat-label">Jobs Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card card-1">
+            <div class="card-icon">�</div>
+            <div class="card-title">Digital Work</div>
+            <div class="card-status">Active</div>
+          </div>
+          <div class="visual-card card-2">
+            <div class="card-icon">🔧</div>
+            <div class="card-title">Physical Work</div>
+            <div class="card-status">Available</div>
+          </div>
+          <div class="visual-card card-3">
+            <div class="card-icon">💰</div>
+            <div class="card-title">Secure Payment</div>
+            <div class="card-status">Guaranteed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Statement Article -->
+    <article id="about" class="problem-statement">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">The Challenge</span>
+          <h2 class="section-title">Why Gig Workers Need KaamSetu</h2>
+          <p class="section-subtitle">
+            India's gig workers face real challenges. We're here to solve them.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon">�</div>
+            <h3>Unfair Pay</h3>
+            <p>No power to negotiate wages or working conditions</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">⏰</div>
+            <h3>Payment Delays</h3>
+            <p>Long waits for earnings with no guarantee</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🔒</div>
+            <h3>Safety Issues</h3>
+            <p>Lack of protection and dispute resolution</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📍</div>
+            <h3>Location Mismatch</h3>
+            <p>Jobs too far away, wasting time and money</p>
+          </div>
+        </div>
+
+        <div class="solution-highlight">
+          <div class="solution-content">
+            <h3>Our Solution</h3>
+            <p>
+              KaamSetu gives you negotiation power, location-based job matching,
+              secure escrow payments, and fair dispute resolution. All in one platform.
+            </p>
+            <a href="#features" class="link-arrow">See How It Works →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Key Features</span>
+          <h2 class="section-title">How KaamSetu Works</h2>
+          <p class="section-subtitle">
+            Simple, powerful tools that put you in control
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <div class="feature-icon">🤝</div>
+            </div>
+            <h3>Fair Negotiation</h3>
+            <p>Chat-based system to negotiate wages and terms directly with employers</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <div class="feature-icon">📍</div>
+            </div>
+            <h3>Location Matching</h3>
+            <p>Find jobs near you with GPS-based smart matching</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <div class="feature-icon">💳</div>
+            </div>
+            <h3>Secure Payments</h3>
+            <p>Escrow system ensures you get paid on time, every time</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <div class="feature-icon">🛡️</div>
+            </div>
+            <h3>Dispute Resolution</h3>
+            <p>Fair mediation system with admin review and evidence logs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Demo Video Section -->
+    <section id="demo" class="demo-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">See It In Action</span>
+          <h2 class="section-title">Platform Demo</h2>
+          <p class="section-subtitle">
+            Watch how KaamSetu transforms your gig work experience
+          </p>
+        </div>
+
+        <div class="video-container">
+          <video controls poster="video-thumbnail.jpg" class="demo-video">
+            <source src="platform-demo.mp4" type="video/mp4">
+            <source src="platform-demo.webm" type="video/webm">
+            Your browser does not support the video tag. Please upgrade to a modern browser.
+          </video>
+          <div class="video-overlay">
+            <button class="play-button" aria-label="Play video">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="white">
+                <circle cx="30" cy="30" r="28" fill="rgba(99, 102, 241, 0.9)" />
+                <path d="M24 18L42 30L24 42V18Z" fill="white" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="demo-highlights">
+          <div class="highlight-item">
+            <img src="screenshot-1.jpg" alt="Job posting interface" class="highlight-image">
+            <h4>Easy Job Posting</h4>
+          </div>
+          <div class="highlight-item">
+            <img src="screenshot-2.jpg" alt="Negotiation chat interface" class="highlight-image">
+            <h4>Real-time Negotiation</h4>
+          </div>
+          <div class="highlight-item">
+            <img src="screenshot-3.jpg" alt="Payment dashboard" class="highlight-image">
+            <h4>Secure Payments</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Enhancements Section -->
+    <section class="future-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Coming Soon</span>
+          <h2 class="section-title">What's Next</h2>
+          <p class="section-subtitle">
+            Building a better future for gig workers
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>AI Job Matching</h3>
+              <p>Smart recommendations based on your skills and location</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Mobile Apps</h3>
+              <p>Android and iOS apps for work on the go</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Voice Support</h3>
+              <p>Post jobs in Hindi, Tamil, Bengali, and more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>Get Started Today</h2>
+            <p>Join thousands of workers and employers using KaamSetu</p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:support@kaamsetu.in">support@kaamsetu.in</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+911800123456">+91 1800-123-456</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Mumbai, Maharashtra, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <h3>Send us a message</h3>
+
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="userType">I am a *</label>
+              <select id="userType" name="userType" required>
+                <option value="">Select an option</option>
+                <option value="worker">Gig Worker</option>
+                <option value="employer">Employer</option>
+                <option value="both">Both</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required
+                placeholder="Tell us how we can help you..."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to our newsletter for updates</label>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the <a href="#terms">Terms & Conditions</a> *</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sidebar (Aside) -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <h3>Quick Links</h3>
+      <ul class="sidebar-links">
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#about">📖 About</a></li>
+        <li><a href="#features">✨ Features</a></li>
+        <li><a href="#modules">🔧 Modules</a></li>
+        <li><a href="#demo">🎥 Demo</a></li>
+        <li><a href="#contact">📬 Contact</a></li>
+      </ul>
+
+      <div class="sidebar-cta">
+        <h4>Ready to Start?</h4>
+        <p>Join our platform today</p>
+        <button class="btn-sidebar">Sign Up Now</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="footerGradient" x1="0" y1="0" x2="40" y2="40">
+                  <stop offset="0%" style="stop-color:#6366f1" />
+                  <stop offset="50%" style="stop-color:#8b5cf6" />
+                  <stop offset="100%" style="stop-color:#ec4899" />
+                </linearGradient>
+              </defs>
+              <path d="M5 25 Q10 15 15 25" stroke="url(#footerGradient)" stroke-width="3" fill="none"
+                stroke-linecap="round" />
+              <path d="M25 25 Q30 15 35 25" stroke="url(#footerGradient)" stroke-width="3" fill="none"
+                stroke-linecap="round" />
+              <path d="M15 20 L18 17 L22 17 L25 20 M18 17 L20 15 M22 17 L20 15" stroke="url(#footerGradient)"
+                stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>KaamSetu</span>
+          </div>
+          <p class="footer-description">
+            Bridging India's workers with opportunities through fair negotiation and secure payments.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 KaamSetu. All rights reserved. Built with ❤️ for India's gig workers.</p>
+        <div class="footer-badges">
+          <span class="badge">🔒 Secure</span>
+          <span class="badge">✓ Verified</span>
+          <span class="badge">🇮🇳 Made in India</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Authentication Modal -->
+  <div class="auth-overlay" id="authOverlay">
+    <div class="auth-modal">
+      <div class="auth-header">
+        <button class="auth-close" id="authClose">×</button>
+        <div class="auth-logo">🌉</div>
+        <h2 class="auth-title">Welcome to KaamSetu</h2>
+        <p class="auth-subtitle">Your bridge to better opportunities</p>
+      </div>
+
+      <div class="auth-body">
+        <!-- Tabs -->
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="signin">Sign In</button>
+          <button class="auth-tab" data-tab="signup">Sign Up</button>
+        </div>
+
+        <!-- Sign In Form -->
+        <form class="auth-form active" id="signinForm">
+          <div class="auth-input-group">
+            <label class="auth-label">Email or Phone</label>
+            <div class="auth-input-wrapper">
+              <span class="auth-input-icon">📧</span>
+              <input type="text" class="auth-input" placeholder="Enter your email or phone" required>
+            </div>
+          </div>
+
+          <div class="auth-input-group">
+            <label class="auth-label">Password</label>
+            <div class="auth-input-wrapper">
+              <span class="auth-input-icon">🔒</span>
+              <input type="password" class="auth-input" id="signinPassword" placeholder="Enter your password" required>
+              <button type="button" class="password-toggle" data-target="signinPassword">👁️</button>
+            </div>
+          </div>
+
+          <div class="auth-checkbox-group">
+            <input type="checkbox" id="rememberMe" class="auth-checkbox">
+            <label for="rememberMe" class="auth-checkbox-label">Remember me</label>
+            <a href="#" class="auth-forgot" style="margin-left: auto;">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="auth-submit">Sign In</button>
+
+          <div class="auth-divider">Or continue with</div>
+
+          <div class="auth-social">
+            <button type="button" class="auth-social-btn">
+              <span>🔵</span> Google
+            </button>
+            <button type="button" class="auth-social-btn">
+              <span>📱</span> Phone
+            </button>
+          </div>
+
+          <div class="auth-footer">
+            Don't have an account? <a href="#" class="switch-to-signup">Sign Up</a>
+          </div>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form class="auth-form" id="signupForm">
+          <div class="auth-input-group">
+            <label class="auth-label">I am a</label>
+            <div class="user-type-selector">
+              <div class="user-type-option" data-type="worker">
+                <div class="user-type-icon">👷</div>
+                <div class="user-type-label">Worker</div>
+              </div>
+              <div class="user-type-option" data-type="employer">
+                <div class="user-type-icon">💼</div>
+                <div class="user-type-label">Employer</div>
+              </div>
+            </div>
+            <input type="hidden" id="userType" required>
+          </div>
+
+          <div class="auth-input-group">
+            <label class="auth-label">Full Name</label>
+            <div class="auth-input-wrapper">
+              <span class="auth-input-icon">👤</span>
+              <input type="text" class="auth-input" placeholder="Enter your full name" required>
+            </div>
+          </div>
+
+          <div class="auth-input-group">
+            <label class="auth-label">Email Address</label>
+            <div class="auth-input-wrapper">
+              <span class="auth-input-icon">📧</span>
+              <input type="email" class="auth-input" placeholder="your.email@example.com" required>
+            </div>
+          </div>
+
+          <div class="auth-input-group">
+            <label class="auth-label">Phone Number</label>
+            <div class="auth-input-wrapper">
+              <span class="auth-input-icon">📱</span>
+              <input type="tel" class="auth-input" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+
+          <div class="auth-input-group">
+            <label class="auth-label">Password</label>
+            <div class="auth-input-wrapper">
+              <span class="auth-input-icon">🔒</span>
+              <input type="password" class="auth-input" id="signupPassword" placeholder="Create a strong password"
+                required>
+              <button type="button" class="password-toggle" data-target="signupPassword">👁️</button>
+            </div>
+          </div>
+
+          <div class="auth-checkbox-group">
+            <input type="checkbox" id="agreeTerms" class="auth-checkbox" required>
+            <label for="agreeTerms" class="auth-checkbox-label">
+              I agree to the <a href="#" class="auth-forgot">Terms & Conditions</a>
+            </label>
+          </div>
+
+          <button type="submit" class="auth-submit">Create Account</button>
+
+          <div class="auth-divider">Or sign up with</div>
+
+          <div class="auth-social">
+            <button type="button" class="auth-social-btn">
+              <span>🔵</span> Google
+            </button>
+            <button type="button" class="auth-social-btn">
+              <span>📱</span> Phone
+            </button>
+          </div>
+
+          <div class="auth-footer">
+            Already have an account? <a href="#" class="switch-to-signin">Sign In</a>
+          </div>
+        </form>
+
+        <!-- Success Message -->
+        <div class="auth-success" id="authSuccess">
+          <div class="success-icon">✓</div>
+          <h3 class="success-title">Welcome to KaamSetu!</h3>
+          <p class="success-message">Your account has been created successfully.</p>
+          <button class="auth-submit" id="successClose">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
