@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkXpress | Connecting India's Workforce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="site-wrapper">
+
+    <!-- hader for webpage -->
+    <header class="main-header">
+        <nav class="container nav-flex">
+            <div class="logo" onclick="showPage('home')">
+                <img src="logo.png" alt="WorkXpress Logo" style="width: 45px; height: 45px; object-fit: contain;">
+                <span class="logo-text">Work<span>Xpress</span></span>
+            </div>
+
+            <!-- navbar functionality -->
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" class="nav-link active" id="link-home"
+                        onclick="showPage('home')">Home</a></li>
+                <li><a href="javascript:void(0)" class="nav-link" id="link-find" onclick="showPage('find-jobs')">Find
+                        Jobs</a></li>
+                <li><a href="javascript:void(0)" class="nav-link" id="link-post" onclick="showPage('post-job')">Post
+                        Job</a></li>
+            </ul>
+
+            <!-- navbar ->  sign in & account functionality -->
+            <div class="nav-actions">
+                <div id="authButtons">
+                    <button class="btn btn-ghost" onclick="openAuth()">Sign In</button>
+                    <button class="btn btn-primary btn-sm" onclick="openAuth()">Join Now</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="app-content">
+
+        <section id="home-page" class="page active">
+            <div class="container">
+                <!-- main webpages hero content -->
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="badge">✨ Direct Hiring • Verified Talent</span>
+                        <h1>Connecting India's Skilled <span class="text-indigo">Workforce.</span></h1>
+                        <p>Stop searching and start working. We connect verified workers directly with local businesses
+                            for fair pay and reliable work.</p>
+                        <div class="hero-btns">
+                            <button class="btn btn-primary btn-lg" onclick="showPage('find-jobs')">Browse Gigs
+                                ➔</button>
+                            <button class="btn btn-secondary btn-lg" onclick="showPage('post-job')">Post a
+                                Vacancy</button>
+                        </div>
+                    </div>
+                    <!-- video and photo section -->
+                    <div class="hero-visual">
+                        <div class="video-container">
+                            <video controls poster="hero_image.png">
+                                <source src="loding_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card below hero section -->
+                <div class="features-section">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Verified Profiles</h3>
+                        <p>Every worker and employer goes through a rigorous identity verification process for absolute
+                            safety.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💸</div>
+                        <h3>Zero Middlemen</h3>
+                        <p>Direct communication leads to 20% higher daily wages by eliminating commissions and extra
+                            fees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- new section/new page find-jobs -->
+        <section id="find-jobs-page" class="page">
+            <div class="container job-layout">
+                <div class="job-main">
+                    <div class="section-title">
+                        <h2>Available <span class="text-indigo">Gigs</span></h2>
+                        <div class="search-bar">
+                            <input type="text" id="job-search-input"
+                                placeholder="Search by category, role or location..." onkeyup="filterJobs()">
+                            <button class="btn btn-primary btn-sm" onclick="filterJobs()">Search</button>
+                        </div>
+                    </div>
+
+                    <!-- card of job description/application -->
+                    <div class="job-list">
+                        <div class="job-card">
+                            <div class="card-meta">
+                                <span class="tag">🏗️ Construction</span>
+                                <span class="price">₹1,100/Day</span>
+                            </div>
+                            <h3>Senior Tile Mason</h3>
+                            <p>📍 Okhla Phase III, Delhi</p>
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-full">Apply Now</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="card-meta">
+                                <span class="tag">🚚 Logistics</span>
+                                <span class="price">₹850/Day</span>
+                            </div>
+                            <h3>Delivery Executive</h3>
+                            <p>📍 Gurgaon Sector 44</p>
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-full">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- side bar description  -->
+                <aside class="sidebar">
+                    <div class="glass-card">
+                        <h3>🛡️ Safety First</h3>
+                        <p>Never pay any upfront fees to get a job. Verified employers will never ask for security
+                            deposits.</p>
+                        <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--border);">
+                        <p style="font-size: 0.85rem; color: var(--slate);">Need help? <a href="#"
+                                style="color: var(--primary);">Contact Support</a></p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- new section/new page post-jobs -->
+        <section id="post-job-page" class="page">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>List a New <span class="text-indigo">Requirement</span></h2>
+                        <p>Fill in the details to reach thousands of verified workers in your immediate area.</p>
+                    </div>
+
+                    <!-- post-job form -->
+                    <form id="jobForm" class="grid-form">
+                        <div class="input-group">
+                            <label>Employer / Company Name</label>
+                            <input type="text" id="post-employer" placeholder="e.g. Apex Builders" required>
+                            <span class="error-msg" id="err-employer"></span>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Job Title</label>
+                                <input type="text" id="post-title" placeholder="e.g. Forklift Operator" required>
+                                <span class="error-msg" id="err-title"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Category</label>
+                                <select id="post-category">
+                                    <optgroup label="Physical Gigs">
+                                        <option value="Logistics">Logistics & Delivery</option>
+                                        <option value="Construction">Construction & Masonry</option>
+                                        <option value="Retail">Retail & Sales</option>
+                                        <option value="Hospitality">Hospitality & Waiter</option>
+                                        <option value="Plumbing">Plumbing Services</option>
+                                        <option value="Electrical">Electrical Work</option>
+                                        <option value="Housekeeping">Housekeeping & Cleaning</option>
+                                        <option value="Gardening">Gardening & Landscaping</option>
+                                        <option value="Car Wash">Car Washing & Detailing</option>
+                                        <option value="AC Repair">AC & Appliance Repair</option>
+                                        <option value="Security">Security Guard</option>
+                                        <option value="Tailoring">Tailoring & Alterations</option>
+                                    </optgroup>
+                                    <optgroup label="Digital Gigs">
+                                        <option value="Data Entry">Data Entry & Typing</option>
+                                        <option value="Graphic Design">Graphic Design & Logos</option>
+                                        <option value="Writing">Content Writing</option>
+                                        <option value="Virtual Assistant">Virtual Assistant</option>
+                                        <option value="Video Editing">Video Editing</option>
+                                        <option value="Web Developer">Web Development</option>
+                                        <option value="SEO">SEO Specialist</option>
+                                        <option value="Social Media">Social Media Manager</option>
+                                        <option value="Tutor">Online Tutor</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Specific Location / Site Address</label>
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" id="post-location" placeholder="e.g. Sector 18, Noida, Uttar Pradesh"
+                                    required style="flex: 1;">
+                                <button type="button" class="btn btn-secondary" onclick="detectLocation()"
+                                    style="white-space: nowrap; padding: 10px 15px;">📍 Detect</button>
+                            </div>
+                            <span class="error-msg" id="err-location"></span>
+                        </div>
+                        <div class="input-group">
+                            <label>Detailed Requirements</label>
+                            <textarea id="post-desc" rows="4"
+                                placeholder="Mention timings, age limit, and specific site location..."></textarea>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Daily Wage (₹)</label>
+                                <input type="number" id="post-wage" placeholder="1000" required>
+                                <span class="error-msg" id="err-wage"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Contact Phone</label>
+                                <input type="tel" id="post-phone" placeholder="9876543210" required>
+                                <span class="error-msg" id="err-phone"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">Publish Listing 🚀</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile-page" class="page">
+            <div class="container">
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <div class="profile-avatar-large" id="profile-initials">JS</div>
+                        <div class="profile-info">
+                            <h2 id="profile-name">John Smith</h2>
+                            <p id="profile-email" class="text-slate">john@example.com</p>
+                            <span class="badge">Verified Worker</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="stats-jobs">12</div>
+                            <div class="stat-label">Gigs Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="stats-rating">4.8/5</div>
+                            <div class="stat-label">Average Rating</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="stats-earnings">₹15,400</div>
+                            <div class="stat-label">Total Earned</div>
+                        </div>
+                    </div>
+
+                    <div class="profile-sections"
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+                        <div class="profile-card">
+                            <h3>Feedback & Reviews</h3>
+                            <div id="feedback-list">
+                                <div class="feedback-item">
+                                    <div class="feedback-meta">
+                                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                                        <span class="date">2 days ago</span>
+                                    </div>
+                                    <p>"Punctual and very professional with the plumbing work. Highly recommended!"
+                                    </p>
+                                    <small>- Apex Builders</small>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="feedback-meta">
+                                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                                        <span class="date">1 week ago</span>
+                                    </div>
+                                    <p>"Excellent delivery service, knew all the shortcuts in Gurgaon."</p>
+                                    <small>- QuickEats Service</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <h3>My Posted Gigs</h3>
+                            <div id="my-gigs-list" style="display: flex; flex-direction: column; gap: 10px;">
+                                <p style="color: var(--slate); font-style: italic; font-size: 0.9rem;">No gigs
+                                    posted yet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-secondary" onclick="handleLogout()" style="margin-top: 30px;">Sign
+                        Out</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer of web  -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-logo" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="logo.png" alt="WorkXpress Logo" style="width: 35px; height: 35px; object-fit: contain;">
+                    Work<span>Xpress</span>
+                </div>
+                <div class="footer-links" style="display: flex; gap: 30px;">
+                    <a href="#" style="text-decoration: none; color: var(--slate); font-size: 0.9rem;">Privacy</a>
+                    <a href="#" style="text-decoration: none; color: var(--slate); font-size: 0.9rem;">Terms</a>
+                    <a href="#" style="text-decoration: none; color: var(--slate); font-size: 0.9rem;">Contact</a>
+                </div>
+            </div>
+            <div
+                style="margin-top: 40px; text-align: center; border-top: 1px solid var(--border); padding-top: 30px; color: var(--slate-light); font-size: 0.85rem;">
+                <p>&copy; 2026 WorkXpress. Empowering India's Workforce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- authentication model main visulization -->
+    <div id="authModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeAuth()">&times;</button>
+            <div class="auth-tabs">
+                <button id="tab-login" class="auth-tab active" onclick="switchAuth('login')">Sign In</button>
+                <button id="tab-signup" class="auth-tab" onclick="switchAuth('signup')">New Account</button>
+            </div>
+
+            <form id="authForm" onsubmit="handleAuth(event)">
+                <div id="signup-fields" style="display: none;">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" id="auth-name" placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="auth-email" placeholder="name@example.com" required>
+                    <span class="error-msg" id="err-auth-email"></span>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="auth-password" placeholder="••••••••" required>
+                    <span class="error-msg" id="err-auth-password"></span>
+                </div>
+                <button type="submit" id="auth-submit" class="btn btn-primary btn-full" style="margin-top: 20px;">Sign
+                    In</button>
+            </form>
+
+            <div class="auth-divider">
+                <span>Or continue with</span>
+            </div>
+
+            <div class="social-auth">
+                <button class="btn-social">
+                    <img src="https://img.icons8.com/color/24/000000/google-logo.png" alt="Google">
+                    Google
+                </button>
+                <button class="btn-social">
+                    <img src="https://img.icons8.com/color/24/000000/apple-logo.png" alt="Apple">
+                    Apple
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
