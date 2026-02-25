@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navbar>
+    <item>
+        <label>Home</label>
+        <path>/</path>
+    </item>
+    <item>
+        <label>Find Jobs</label>
+        <path>/find-jobs</path>
+    </item>
+    <item>
+        <label>Post Job</label>
+        <path>/post-job</path>
+    </item>
+    <item>
+        <label>Dashboard</label>
+        <path>/dashboard</path>
+    </item>
+    <item>
+        <label>Profile</label>
+        <path>/profile</path>
+    </item>
+</navbar>
